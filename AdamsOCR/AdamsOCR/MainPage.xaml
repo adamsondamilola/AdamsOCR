@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AdamsOCR.MainPage">
+    <StackLayout>
+        <Frame BackgroundColor="#198754" Padding="24" CornerRadius="0">
+            <Label Text="Adams OCR" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+        <Label Text="How to use" HorizontalOptions="Center" TextColor="#999" FontSize="Small"/>
+        <Label Text="Click SCAN IMAGE, capture image and crop. Text on image will be automatically generated. " HorizontalOptions="Center" TextColor="#198754" FontSize="Small" Padding="30,0,30,10"/>
+        <StackLayout Padding="30,10,30,10">
+            <Button BackgroundColor="#198754" TextColor="#FFFFFF" Text="Scan Image" x:Name="ScanImage" Clicked="ScanImage_Clicked" ></Button>
+        </StackLayout>
+        <StackLayout Padding="30,10,30,10">
+            <ScrollView VerticalScrollBarVisibility="Never">
+                <StackLayout>
+                    <StackLayout>
+                        <Image x:Name="_takenImage"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Editor x:Name="textFromImage" HeightRequest="500"></Editor>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

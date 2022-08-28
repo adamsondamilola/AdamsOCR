@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="MainTheme" parent="MainTheme.Base">
+	  <item name="android:statusBarColor">#198754</item>
+	  <item name="colorControlActivated">#999999</item>
+	  <item name="colorPrimary">#198754</item>
+	  <item name="colorAccent">#198754</item>
+  </style>
+</resources>
